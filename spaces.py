@@ -21,5 +21,9 @@ cv.imshow("Lab",lab)
 rgb = cv.cvtColor(img,cv.COLOR_BGR2RGB)
 cv.imshow("RGB",rgb)
 
+#special case THERES no grayscale to Lab
+# HSV to BGR
+hsv_bgr = cv.cvtColor(hsv, cv.COLOR_HSV2BGR)
+cv.imshow("HSV-BGT",hsv_bgr)
 
 cv.waitKey(0)
